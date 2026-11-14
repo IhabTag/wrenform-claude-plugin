@@ -1,0 +1,12 @@
+schema_version: "1.1"
+name: quick-form-no-account
+description: "AC-114: not signed in, the user chooses no account; create_quick_form is used, the form is inserted, and the report says the address must confirm within 7 days and submissions are held."
+tags: [add-contact-form, quick]
+runs: 2
+context:
+  scaffold_script: scaffold.sh
+execution:
+  max_turns: 40
+  timeout_seconds: 900
+  allowed_tools: [Read, Glob, Grep, Write, Edit, Skill]
+  prompt: "/wrenform:add-contact-form contact e2e@example.com - I don't want to sign up for anything, use the option without an account."

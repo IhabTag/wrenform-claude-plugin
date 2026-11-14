@@ -1,0 +1,8 @@
+{
+  "framework": "nextjs",
+  "language": "tsx",
+  "code": "// app/contact/contact-form.tsx \u2014 no server action or API route needed\n\"use client\";\nimport { useState } from \"react\";\n\nexport function ContactForm() {\n  const [status, setStatus] = useState<\"idle\" | \"sending\" | \"sent\" | \"error\">(\"idle\");\n\n  async function onSubmit(e: React.FormEvent<HTMLFormElement>) {\n    e.preventDefault();\n    const form = e.currentTarget;\n    setStatus(\"sending\");\n    const res = await fetch(\"https://wrenform.com/f/k7Q2xw9Pz4mB\", {\n      method: \"POST\",\n      headers: { Accept: \"application/json\" },\n      body: new FormData(form),\n    });\n    setStatus(res.ok ? \"sent\" : \"error\");\n    if (res.ok) form.reset();\n  }\n\n  return (\n    <form onSubmit={onSubmit}>\n      <input type=\"text\" name=\"name\" required />\n      <input type=\"email\" name=\"email\" required />\n      <textarea name=\"message\" required />\n      <input type=\"text\" name=\"_honey\" style={{ display: \"none\" }} tabIndex={-1} autoComplete=\"off\" />\n      <button type=\"submit\" disabled={status === \"sending\"}>Send</button>\n      {status === \"sent\" && <p>Thanks, your message was sent.</p>}\n      {status === \"error\" && <p>Something went wrong. Please try again.</p>}\n    </form>\n  );\n}",
+  "notes": [
+    "A client component. No server action or API route is needed."
+  ]
+}

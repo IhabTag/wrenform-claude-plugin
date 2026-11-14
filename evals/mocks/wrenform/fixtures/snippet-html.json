@@ -1,0 +1,8 @@
+{
+  "framework": "html",
+  "language": "html",
+  "code": "<form action=\"https://wrenform.com/f/k7Q2xw9Pz4mB\" method=\"POST\">\n  <input type=\"text\" name=\"name\" required>\n  <input type=\"email\" name=\"email\" required>\n  <textarea name=\"message\" required></textarea>\n  <input type=\"text\" name=\"_honey\" style=\"display:none\" tabindex=\"-1\" autocomplete=\"off\">\n  <button type=\"submit\">Send</button>\n</form>\n<!-- Optional: a timing check against bots, and data-ajax to submit in place -->\n<script src=\"https://wrenform.com/js/v1/form.js\" defer></script>",
+  "notes": [
+    "Works without JavaScript. The script tag is optional (timing check and data-ajax)."
+  ]
+}

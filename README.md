@@ -55,7 +55,7 @@ The plugin adds two MCP servers:
 | `wrenform-quick` | None | Creating a form with only an email address |
 
 - **With an account (recommended, free):** the first time, run `/mcp`, choose **wrenform**, then **Authenticate**.
-  Sign in with your email or Google, and approve what Claude Code may do. You can disconnect it any time in your
+  Sign in with your email, and approve what Claude Code may do. You can disconnect it any time in your
   Wrenform account settings.
 - **Without an account:** the plugin creates the form with just your email address. Wrenform emails that address
   once. Nothing is forwarded until you click **Confirm** in that email; messages sent before then are held and
@@ -66,6 +66,20 @@ The plugin adds two MCP servers:
 Only what the form needs: the form component or markup, its page (with a navigation link if the page is new), a
 thank-you page for sites without JavaScript, and a Content Security Policy entry if your site has one. It doesn't add
 dependencies, and it never commits, pushes or deploys.
+
+## What the plugin sends, and where
+
+The plugin has no code of its own: two skills (instructions for Claude) and two remote MCP servers, both at
+`https://wrenform.com`. It sends nothing anywhere else.
+
+- **To create a form:** the form's name, the email address that should receive messages, your site's address if
+  known, and the framework name.
+- **To manage forms:** the settings you ask Claude to change, and requests to read your forms, their health and
+  their recent messages.
+- **Sign-in** happens in your browser on wrenform.com. Claude Code stores the resulting token; the plugin never sees
+  your password.
+
+The plugin itself stores nothing. Wrenform keeps your forms and messages as its privacy policy describes.
 
 ## Privacy and safety
 
