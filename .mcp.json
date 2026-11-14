@@ -1,0 +1,6 @@
+{
+  "mcpServers": {
+    "wrenform": { "type": "http", "url": "https://wrenform.com/mcp" },
+    "wrenform-quick": { "type": "http", "url": "https://wrenform.com/mcp/quick" }
+  }
+}

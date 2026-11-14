@@ -1,0 +1,28 @@
+name: Validate
+
+on:
+  push:
+  pull_request:
+
+permissions:
+  contents: read
+
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+      - name: Install Claude Code
+        run: npm install -g @anthropic-ai/claude-code@2.1.309
+      - name: Validate the plugin and marketplace (strict)
+        run: claude plugin validate . --strict
+      - name: Plugin directory checks
+        run: claude plugin validate . --strict --profile directory
+      - name: Versions match
+        run: |
+          a=$(jq -r .version .claude-plugin/plugin.json)
+          b=$(jq -r '.plugins[0].version' .claude-plugin/marketplace.json)
+          test "$a" = "$b" || { echo "plugin.json $a != marketplace.json $b"; exit 1; }

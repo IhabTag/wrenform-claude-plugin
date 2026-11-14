@@ -1,0 +1,13 @@
+{
+  "name": "wrenform",
+  "displayName": "Wrenform",
+  "version": "1.0.0",
+  "description": "Add a working contact form to any site in one command. Submissions arrive by email; no mail provider to set up.",
+  "author": { "name": "Qamarita Lab", "url": "https://wrenform.com" },
+  "homepage": "https://wrenform.com/docs/claude-code",
+  "repository": "https://github.com/IhabTag/wrenform-claude-plugin",
+  "license": "MIT",
+  "keywords": ["contact form", "forms", "form backend", "email", "static site", "mcp"],
+  "privacyPolicyUrl": "https://wrenform.com/legal/privacy",
+  "termsOfServiceUrl": "https://wrenform.com/legal/terms"
+}

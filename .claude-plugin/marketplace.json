@@ -1,0 +1,15 @@
+{
+  "name": "wrenform",
+  "owner": { "name": "Qamarita Lab", "url": "https://wrenform.com" },
+  "description": "The Wrenform plugin for Claude Code.",
+  "plugins": [
+    {
+      "name": "wrenform",
+      "source": "./",
+      "description": "Add a working contact form to any site in one command.",
+      "version": "1.0.0",
+      "category": "development",
+      "tags": ["forms", "contact-form", "email", "mcp"]
+    }
+  ]
+}

@@ -1,0 +1,6 @@
+body { margin: 0; font-family: system-ui, sans-serif; color: #111827; background: #ffffff; }
+.header { display: flex; justify-content: space-between; padding: 1rem 2rem; border-bottom: 1px solid #e5e7eb; }
+.header nav a { margin-left: 1rem; color: #111827; }
+.brand { font-weight: 700; color: #1d4ed8; text-decoration: none; }
+.main { max-width: 42rem; margin: 0 auto; padding: 2rem; }
+a:focus-visible, button:focus-visible, input:focus-visible, textarea:focus-visible { outline: 3px solid #1d4ed8; outline-offset: 2px; }
