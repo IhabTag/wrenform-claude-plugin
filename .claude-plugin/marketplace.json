@@ -7,7 +7,7 @@
       "name": "wrenform",
       "source": "./",
       "description": "Add a working contact form to any site in one command.",
-      "version": "1.0.0",
+      "version": "1.0.1",
       "category": "development",
       "tags": ["forms", "contact-form", "email", "mcp"]
     }

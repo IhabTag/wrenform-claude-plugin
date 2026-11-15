@@ -1,5 +1,10 @@
 # Changelog
 
+## 1.0.1 (2026-11-15)
+
+- Wrenform is live: the "In development" notice is gone, and anyone can sign in or create a form with only an email
+  address.
+
 ## 1.0.0 (2026-11-14)
 
 - `add-contact-form` skill: detects the framework, creates the form (signed in, or with only an email address),

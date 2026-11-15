@@ -1,7 +1,5 @@
 # Wrenform for Claude Code
 
-> **In development.** Wrenform hasn't launched yet, so this plugin works only for invited testers for now.
-
 Add a working contact form to any website in one command. Ask Claude Code for a contact form and the plugin:
 
 1. detects your framework (plain HTML, Next.js, Astro, React, Vue, Svelte, Hugo, Jekyll and more);

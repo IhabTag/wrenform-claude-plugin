@@ -1,7 +1,7 @@
 {
   "name": "wrenform",
   "displayName": "Wrenform",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Add a working contact form to any site in one command. Submissions arrive by email; no mail provider to set up.",
   "author": { "name": "Qamarita Lab", "url": "https://wrenform.com" },
   "homepage": "https://wrenform.com/docs/claude-code",
